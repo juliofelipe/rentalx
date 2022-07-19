@@ -1,7 +1,7 @@
 import e from "express";
 import { Repository } from "typeorm";
 
-import AppDataSource from "../../../../../database/data-source";
+import AppDataSource from "../../../../../../../shared/infra/typeorm/data-source";
 import { ICreateUserDTO } from "../../dtos/ICreatedUserDTO";
 import { User } from "../../User";
 import { IUsersRepository } from "../IUsersRepository";

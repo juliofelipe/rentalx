@@ -1,10 +1,8 @@
-import e from "express";
 import { Repository } from "typeorm";
-
-import AppDataSource from "../../../../database/data-source";
-import { ICreateUserDTO } from "../../dtos/ICreatedUserDTO";
-import { User } from "../../entities/User";
-import { IUsersRepository } from "../IUsersRepository";
+import AppDataSource from "../../../../../shared/infra/typeorm/data-source";
+import { ICreateUserDTO } from "../../../dtos/ICreatedUserDTO";
+import { IUsersRepository } from "../entities/repositories/IUsersRepository";
+import { User } from "../entities/User";
 
 class UsersRepository implements IUsersRepository {
   private repository: Repository<User>;
