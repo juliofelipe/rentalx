@@ -33,7 +33,7 @@ export class CreateCars1658304926046 implements MigrationInterface {
             type: "varchar",
           },
           {
-            name: "fine_account",
+            name: "fine_amount",
             type: "numeric",
           },
           {

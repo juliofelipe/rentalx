@@ -1,4 +1,3 @@
-import e from "express";
 import { Repository } from "typeorm";
 
 import AppDataSource from "../../../../../../../shared/infra/typeorm/data-source";

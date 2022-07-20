@@ -15,10 +15,10 @@ const AppDataSource = new DataSource({
   subscribers: [],
 });
 
+export default AppDataSource;
+
 export function createConnection(
   host = process.env.NODE_ENV === "test" ? "localhost" : "db"
 ): Promise<DataSource> {
   return AppDataSource.setOptions({ host }).initialize();
 }
-
-export default AppDataSource;
